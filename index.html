@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rétro-vi</title>
+<meta name="description" content="rétro-vi : un salon tendu de cuir capitonné et une bibliothèque de six livres reliés, un par année du rock, de 1954 à 1985.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cuir: #7b4421;
+    --cuir-sombre: #2a140a;
+    --cognac: #94572a;
+    --fil: #ecdcae;
+    --laiton: #c39a45;
+    --laiton-fonce: #7a5516;
+    --bois: #3a1f0f;
+    --bois-clair: #5f361b;
+    --lampe: #ffd27a;
+    --papier: #ecdcae;
+
+    --grain: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='260'%20height='260'%3E%20%3Cfilter%20id='f'%20x='0'%20y='0'%20width='100%25'%20height='100%25'%3E%20%3CfeTurbulence%20type='turbulence'%20baseFrequency='0.085'%20numOctaves='3'%20seed='11'%20stitchTiles='stitch'%20result='t'/%3E%20%3CfeColorMatrix%20in='t'%20type='saturate'%20values='0'%20result='g'/%3E%20%3CfeDiffuseLighting%20in='g'%20surfaceScale='2.6'%20diffuseConstant='1.15'%20lighting-color='%23ffffff'%3E%20%3CfeDistantLight%20azimuth='225'%20elevation='58'/%3E%20%3C/feDiffuseLighting%3E%20%3C/filter%3E%20%3Crect%20width='260'%20height='260'%20filter='url(%23f)'/%3E%20%3C/svg%3E");
+    --capiton: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='132'%20height='132'%3E%3Cdefs%3E%3CradialGradient%20id='p0'%20gradientUnits='userSpaceOnUse'%20cx='66'%20cy='0'%20r='66'%3E%3Cstop%20offset='0'%20stop-color='%23ffd9a8'%20stop-opacity='.32'/%3E%3Cstop%20offset='.55'%20stop-color='%23000'%20stop-opacity='0'/%3E%3Cstop%20offset='1'%20stop-color='%23000'%20stop-opacity='.6'/%3E%3C/radialGradient%3E%3CradialGradient%20id='p1'%20gradientUnits='userSpaceOnUse'%20cx='66'%20cy='132'%20r='66'%3E%3Cstop%20offset='0'%20stop-color='%23ffd9a8'%20stop-opacity='.32'/%3E%3Cstop%20offset='.55'%20stop-color='%23000'%20stop-opacity='0'/%3E%3Cstop%20offset='1'%20stop-color='%23000'%20stop-opacity='.6'/%3E%3C/radialGradient%3E%3CradialGradient%20id='p2'%20gradientUnits='userSpaceOnUse'%20cx='0'%20cy='66'%20r='66'%3E%3Cstop%20offset='0'%20stop-color='%23ffd9a8'%20stop-opacity='.32'/%3E%3Cstop%20offset='.55'%20stop-color='%23000'%20stop-opacity='0'/%3E%3Cstop%20offset='1'%20stop-color='%23000'%20stop-opacity='.6'/%3E%3C/radialGradient%3E%3CradialGradient%20id='p3'%20gradientUnits='userSpaceOnUse'%20cx='132'%20cy='66'%20r='66'%3E%3Cstop%20offset='0'%20stop-color='%23ffd9a8'%20stop-opacity='.32'/%3E%3Cstop%20offset='.55'%20stop-color='%23000'%20stop-opacity='0'/%3E%3Cstop%20offset='1'%20stop-color='%23000'%20stop-opacity='.6'/%3E%3C/radialGradient%3E%3CradialGradient%20id='b'%20cx='.34'%20cy='.3'%20r='.75'%3E%3Cstop%20offset='0'%20stop-color='%23fbe7a1'/%3E%3Cstop%20offset='.45'%20stop-color='%23c39a45'/%3E%3Cstop%20offset='1'%20stop-color='%236b4812'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cpolygon%20points='0,0%2066,66%20132,0%2066,-66'%20fill='url(%23p0)'/%3E%3Cpolygon%20points='0,132%2066,198%20132,132%2066,66'%20fill='url(%23p1)'/%3E%3Cpolygon%20points='-66,66%200,132%2066,66%200,0'%20fill='url(%23p2)'/%3E%3Cpolygon%20points='66,66%20132,132%20198,66%20132,0'%20fill='url(%23p3)'/%3E%3Cpath%20d='M0%200L132%20132M132%200L0%20132'%20stroke='%23140903'%20stroke-opacity='.8'%20stroke-width='3.4'%20fill='none'/%3E%3Cpath%20d='M1.6%20-1.6L133.6%20130.4M133.6%201.6L1.6%20133.6'%20stroke='%23ffd9a8'%20stroke-opacity='.16'%20stroke-width='1.2'%20fill='none'/%3E%3Cg%20fill='%23000'%20fill-opacity='.45'%3E%3Ccircle%20cx='0'%20cy='4'%20r='8'/%3E%3Ccircle%20cx='132'%20cy='4'%20r='8'/%3E%3Ccircle%20cx='0'%20cy='136'%20r='8'/%3E%3Ccircle%20cx='132'%20cy='136'%20r='8'/%3E%3Ccircle%20cx='66'%20cy='70'%20r='8'/%3E%3C/g%3E%3Cg%20fill='url(%23b)'%3E%3Ccircle%20cx='0'%20cy='0'%20r='7.5'/%3E%3Ccircle%20cx='132'%20cy='0'%20r='7.5'/%3E%3Ccircle%20cx='0'%20cy='132'%20r='7.5'/%3E%3Ccircle%20cx='132'%20cy='132'%20r='7.5'/%3E%3Ccircle%20cx='66'%20cy='66'%20r='7.5'/%3E%3C/g%3E%3C/svg%3E");
+    --veine: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='360'%20height='240'%3E%20%3Cfilter%20id='w'%20x='0'%20y='0'%20width='100%25'%20height='100%25'%3E%20%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.006%200.16'%20numOctaves='3'%20seed='5'%20stitchTiles='stitch'/%3E%20%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%20.05%200%200%200%200%20.02%200%200%200%200%20.0%202.1%200%200%200%20-.7'/%3E%20%3C/filter%3E%20%3Crect%20width='360'%20height='240'%20filter='url(%23w)'/%3E%20%3C/svg%3E");
+    --parquet: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='60'%20height='60'%3E%3Cpolygon%20points='0,15%2030,0%2030,14%200,29'%20fill='%234d2c15'%20stroke='%231c0d05'%20stroke-width='1.6'/%3E%3Cpolygon%20points='30,0%2060,15%2060,29%2030,14'%20fill='%2340240f'%20stroke='%231c0d05'%20stroke-width='1.6'/%3E%3Cpolygon%20points='0,45%2030,30%2030,44%200,59'%20fill='%23553219'%20stroke='%231c0d05'%20stroke-width='1.6'/%3E%3Cpolygon%20points='30,30%2060,45%2060,59%2030,44'%20fill='%235a361b'%20stroke='%231c0d05'%20stroke-width='1.6'/%3E%3C/svg%3E");
+
+    --titre: "Bevan", "Rockwell", "Georgia", serif;
+    --texte: "Libre Caslon Text", "Georgia", "Times New Roman", serif;
+    --etiquette: "Special Elite", "Courier New", monospace;
+  }
+
+  @property --lueur { syntax: '<number>'; inherits: false; initial-value: .1; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background-color: #1e0e06;
+    background-image: var(--grain);
+    background-blend-mode: multiply;
+    color: var(--papier);
+    font-family: var(--texte);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--lampe); outline-offset: 4px; }
+
+  /* ---------- Matières ---------- */
+  /* Dorure à chaud : or qui accroche la lumière */
+  .or {
+    background: linear-gradient(100deg, #6e4a12 0%, #c9a24a 22%, #fbe7a1 38%, #b98b3e 50%, #fff3c4 60%, #a8772a 76%, #5e3f0e 100%);
+    background-size: 260% 100%;
+    background-position: 0% 0;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; color: transparent;
+    filter: drop-shadow(0 2px 0 rgba(0,0,0,.65));
+    transition: background-position 1.1s ease;
+  }
+  .projecteur:hover .or, .livre:hover .or, .livre:focus-visible .or, .livre.actif .or { background-position: 100% 0; }
+
+  /* Cuir : grain + coutures */
+  .cuir {
+    background-color: var(--cuir);
+    background-image: var(--grain);
+    background-blend-mode: multiply;
+  }
+  .couture { position: relative; }
+  .couture::before {
+    content: ""; position: absolute; inset: 11px; pointer-events: none;
+    border: 3px dashed var(--fil); border-radius: 5px;
+    opacity: .85;
+    filter: drop-shadow(0 1px 0 rgba(0,0,0,.7));
+  }
+  .rivet {
+    position: absolute; width: 17px; height: 17px; border-radius: 50%;
+    background: radial-gradient(circle at 34% 30%, #fbe7a1 0 14%, #c39a45 40%, #6b4812 100%);
+    box-shadow: 0 2px 3px rgba(0,0,0,.7), inset 0 -1px 1px rgba(0,0,0,.4);
+  }
+
+  /* ---------- Bouton son ---------- */
+  .son {
+    position: fixed; top: 14px; right: 14px; z-index: 60;
+    font: 400 1rem var(--etiquette);
+    color: #2a140a; background: var(--papier);
+    border: 0; border-radius: 4px 14px 4px 14px;
+    padding: 0.5rem 1.1rem; cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,.6), inset 0 0 0 2px #b9a26a;
+  }
+  .son[aria-pressed="true"] { background: var(--lampe); box-shadow: 0 0 24px rgba(255,210,122,.75), inset 0 0 0 2px #b8862a; }
+  .son:active { transform: translateY(2px); }
+
+  /* ---------- Salon : mur de cuir capitonné ---------- */
+  .mur {
+    position: relative; overflow: hidden;
+    background-color: var(--cuir);
+    background-image:
+      radial-gradient(ellipse at 50% 38%, rgba(255,205,140,.22), transparent 55%),
+      radial-gradient(ellipse at 50% 45%, transparent 35%, rgba(10,4,0,.78) 100%),
+      var(--capiton),
+      var(--grain);
+    background-blend-mode: normal, normal, normal, multiply;
+    padding: 0 1rem 4.5rem;
+    text-align: center;
+  }
+  .moulure {
+    height: 40px; margin: 0 -1rem 4.5rem;
+    background:
+      linear-gradient(#8a5a33 0 5px, #3c2010 5px 14px, #6c4021 14px 18px, #1f0f06 18px 22px, #52301a 22px 34px, #120803 34px 40px);
+    box-shadow: 0 10px 22px rgba(0,0,0,.65);
+  }
+  .scene { position: relative; max-width: 640px; margin: 0 auto; padding-bottom: 9.5rem; }
+
+  .plaque {
+    padding: 2.8rem 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow:
+      0 26px 46px rgba(0,0,0,.65),
+      inset 0 0 0 3px rgba(0,0,0,.4),
+      inset 0 3px 0 rgba(255,220,170,.28),
+      inset 0 -30px 50px rgba(0,0,0,.35);
+  }
+  .plaque .rivet.a { top: 15px; left: 15px; }
+  .plaque .rivet.b { top: 15px; right: 15px; }
+  .plaque .rivet.c { bottom: 15px; left: 15px; }
+  .plaque .rivet.d { bottom: 15px; right: 15px; }
+  .plaque h1 {
+    margin: 0; position: relative;
+    font: 400 clamp(3.2rem, 14vw, 6.6rem)/1.05 var(--titre);
+    letter-spacing: .01em;
+  }
+  .devise { margin: 0.7rem 0 0; font: 400 1.15rem var(--etiquette); color: #f1dfb2; text-shadow: 0 2px 0 rgba(0,0,0,.7); position: relative; }
+
+  /* Étiquette de bagage qui se balance */
+  .etiquette {
+    position: absolute; right: 9%; top: calc(100% - 9.5rem - 4px); width: 132px;
+    transform-origin: 50% 0;
+    z-index: 2;
+  }
+  .ficelle { display: block; width: 3px; height: 30px; margin: 0 auto; background: var(--fil); box-shadow: 1px 0 0 rgba(0,0,0,.6); }
+  .carte {
+    position: relative; padding: 1.1rem .6rem .9rem;
+    clip-path: polygon(14% 0, 86% 0, 100% 16%, 100% 100%, 0 100%, 0 16%);
+    background-color: #c9a46a;
+    background-image: var(--grain);
+    background-blend-mode: multiply;
+    color: #2a140a;
+    font: 400 .95rem/1.25 var(--etiquette);
+    filter: drop-shadow(0 8px 8px rgba(0,0,0,.55));
+  }
+  .carte::before { content: ""; position: absolute; top: 9px; left: 50%; width: 15px; height: 15px; margin-left: -8px; border-radius: 50%; background: #1e0e06; box-shadow: inset 0 2px 3px #000, 0 0 0 3px #a8863f; }
+  .carte b { display: block; font: 400 2.1rem/1 var(--titre); margin-top: 1.1rem; }
+  .mur:hover .etiquette { animation: balancier 2.8s ease-in-out 1; }
+  @keyframes balancier {
+    0% { transform: rotate(0); } 18% { transform: rotate(9deg); } 40% { transform: rotate(-6deg); }
+    62% { transform: rotate(3.5deg); } 82% { transform: rotate(-1.5deg); } 100% { transform: rotate(0); }
+  }
+
+  .entrer {
+    display: inline-block; margin-top: 1.6rem; text-decoration: none;
+    font: 400 1.1rem var(--etiquette); color: #2a140a;
+    background: var(--papier); padding: .65rem 1.5rem;
+    border-radius: 4px 16px 4px 16px;
+    box-shadow: 0 5px 14px rgba(0,0,0,.6), inset 0 0 0 2px #b9a26a;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .entrer:hover, .entrer:focus-visible { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(0,0,0,.65), 0 0 28px rgba(255,210,122,.6), inset 0 0 0 2px #b9a26a; }
+
+  /* Lampe qui suit le curseur */
+  .projecteur { position: relative; }
+  .projecteur::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 5;
+    background: radial-gradient(circle 300px at var(--mx, 50%) var(--my, 50%), rgba(255,205,120,.22), transparent 72%);
+    mix-blend-mode: screen;
+    opacity: 0; transition: opacity .45s ease;
+  }
+  .projecteur:hover::after { opacity: 1; }
+
+  /* ---------- Bibliothèque ---------- */
+  .biblio {
+    position: relative; overflow: hidden;
+    padding: 5rem 1rem 0;
+    background-color: #2b150a;
+    background-image:
+      radial-gradient(ellipse at 50% 20%, rgba(255,190,110,.12), transparent 60%),
+      radial-gradient(ellipse at 50% 50%, transparent 40%, rgba(0,0,0,.7) 100%),
+      var(--grain);
+    background-blend-mode: normal, normal, multiply;
+  }
+  .biblio .entete { max-width: 760px; margin: 0 auto 3.2rem; text-align: center; }
+  .biblio h2 { margin: 0 0 1rem; font: 400 clamp(2rem, 6vw, 3.2rem)/1.1 var(--titre); }
+  .biblio .entete p { margin: 0 auto; max-width: 56ch; }
+  .biblio .note { margin-top: .9rem !important; font: 400 .95rem/1.5 var(--etiquette); color: #cdb98a; }
+
+  .meuble {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto;
+    display: grid; grid-template-columns: 46px 1fr 46px; align-items: stretch;
+  }
+  .pilastre {
+    position: relative;
+    background-color: #3a1f0f;
+    background-image:
+      repeating-linear-gradient(90deg, rgba(0,0,0,.55) 0 3px, rgba(255,210,150,.12) 3px 5px, transparent 5px 9px),
+      var(--veine);
+    box-shadow: inset 0 0 14px rgba(0,0,0,.65);
+  }
+  .pilastre::before, .pilastre::after { content: ""; position: absolute; left: -7px; right: -7px; height: 22px; background: linear-gradient(#7a4a26, #3a1f0f); box-shadow: 0 4px 8px rgba(0,0,0,.6); }
+  .pilastre::before { top: 0; border-radius: 3px 3px 0 0; }
+  .pilastre::after { bottom: 0; }
+
+  .niche {
+    position: relative;
+    border: 16px solid #4a2812; border-bottom: 0;
+    border-radius: 50% 50% 0 0 / 150px 150px 0 0;
+    background-color: #190b04;
+    background-image:
+      radial-gradient(ellipse at 50% 80%, rgba(255,200,120,var(--lueur, .1)), transparent 62%),
+      var(--veine);
+    box-shadow: inset 0 0 60px rgba(0,0,0,.9), 0 0 0 2px #1a0c05;
+    padding: 0 1.2rem;
+    transition: --lueur .4s ease;
+  }
+  .niche::before { /* clef de voûte */
+    content: ""; position: absolute; top: -30px; left: 50%; width: 52px; height: 44px; margin-left: -26px;
+    background: linear-gradient(#9a6a38, #4a2812);
+    clip-path: polygon(18% 0, 82% 0, 100% 100%, 0 100%);
+    box-shadow: 0 0 0 2px #1a0c05;
+  }
+  .cadran {
+    margin: 2.8rem 0 .4rem; text-align: center;
+    font: 400 clamp(2.3rem, 8vw, 4.2rem)/1 var(--titre);
+    min-height: 1em;
+  }
+
+  .rayon {
+    display: flex; align-items: flex-end; justify-content: center; gap: 7px;
+    padding: 1.4rem 0 0;
+    min-height: 340px;
+  }
+  .livre {
+    --h: 300px;
+    position: relative; flex: 1 1 0; min-width: 0; max-width: 100px;
+    height: var(--h); padding: 0; border: 0; cursor: pointer;
+    background-color: var(--c);
+    background-image:
+      linear-gradient(90deg, rgba(0,0,0,.5), rgba(255,235,200,.18) 20%, rgba(0,0,0,0) 45%, rgba(0,0,0,.4) 100%),
+      var(--grain);
+    background-blend-mode: normal, multiply;
+    border-radius: 5px 5px 1px 1px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.45), inset 3px 0 0 rgba(255,225,180,.12), 3px 0 8px rgba(0,0,0,.6);
+    transition: transform .4s cubic-bezier(.2,.9,.3,1.2), box-shadow .4s ease;
+  }
+  .livre:nth-child(1) { --h: 296px; }
+  .livre:nth-child(2) { --h: 322px; }
+  .livre:nth-child(3) { --h: 308px; }
+  .livre:nth-child(4) { --h: 334px; }
+  .livre:nth-child(5) { --h: 300px; }
+  .livre:nth-child(6) { --h: 318px; }
+  .livre::before, .livre::after {
+    content: ""; position: absolute; left: 0; right: 0; height: 15px;
+    border-top: 3px solid var(--laiton); border-bottom: 3px solid var(--laiton);
+    opacity: .9; filter: drop-shadow(0 1px 0 rgba(0,0,0,.7));
+  }
+  .livre::before { top: 9%; }
+  .livre::after { bottom: 9%; }
+  .livre .an {
+    position: absolute; left: 0; right: 0; top: 20%; bottom: 20%;
+    display: flex; align-items: center; justify-content: center;
+    writing-mode: vertical-rl; transform: rotate(180deg);
+    font: 400 clamp(1.1rem, 4.4vw, 1.9rem)/1 var(--titre);
+    letter-spacing: .06em;
+  }
+  .livre:hover, .livre:focus-visible, .livre.actif {
+    transform: translateY(-26px) rotate(-1.4deg);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.45), inset 3px 0 0 rgba(255,225,180,.2), 3px 0 8px rgba(0,0,0,.6), 0 0 46px rgba(255,210,122,.45);
+    z-index: 2;
+  }
+  .livre:focus-visible { outline-offset: 6px; }
+
+  .planche {
+    margin: 0 -16px; height: 30px; position: relative; z-index: 1;
+    background-color: #5f361b;
+    background-image: linear-gradient(#a8703c 0 5px, rgba(0,0,0,0) 5px 70%, rgba(0,0,0,.45)), var(--veine);
+    box-shadow: 0 10px 18px rgba(0,0,0,.65);
+  }
+
+  /* ---------- Panneau de lecture (carnet de cuir) ---------- */
+  .lecture-zone { background: linear-gradient(#2b150a, #1c0d05); padding: 3.2rem 1rem 4.5rem; position: relative; }
+  .lecture {
+    position: relative; max-width: 780px; margin: 0 auto;
+    padding: 2.4rem 2.2rem 2.2rem;
+    display: grid; grid-template-columns: auto 1fr; gap: 1.6rem 2.2rem; align-items: center;
+    border-radius: 10px;
+    background-color: #5a2e14;
+    background-image: linear-gradient(135deg, rgba(255,210,150,.16), rgba(0,0,0,.28)), var(--grain);
+    background-blend-mode: normal, multiply;
+    box-shadow: 0 24px 44px rgba(0,0,0,.65), inset 0 0 0 3px rgba(0,0,0,.4), inset 0 3px 0 rgba(255,220,170,.22);
+  }
+  .lecture .grande-annee { font: 400 clamp(3.2rem, 11vw, 5.4rem)/1 var(--titre); position: relative; }
+  .lecture h3 { margin: 0 0 .4rem; font: 400 1.6rem/1.2 var(--titre); color: var(--papier); text-shadow: 0 2px 0 rgba(0,0,0,.6); position: relative; }
+  .lecture p { margin: 0; position: relative; max-width: 52ch; }
+  .lecture .ecoute { margin-top: .9rem; font: 400 1rem/1.4 var(--etiquette); color: #f1dfb2; position: relative; }
+  .signet {
+    position: absolute; top: -10px; right: 34px; width: 24px; height: 78px; z-index: 2;
+    background: linear-gradient(90deg, #7e1d17, #b32a20 50%, #7e1d17);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,.6));
+  }
+  .lecture.vide { text-align: center; grid-template-columns: 1fr; }
+  .lecture.vide p { margin: 0 auto; }
+
+  /* ---------- Parquet et plinthe ---------- */
+  .sol { position: relative; background-color: #3a1f0f; background-image: var(--parquet); padding: 0; }
+  .plinthe { height: 36px; background: linear-gradient(#7b4a26 0 4px, #4a2812 4px 22px, #24120a 22px); box-shadow: 0 8px 14px rgba(0,0,0,.6); }
+  .pied { text-align: center; padding: 3rem 1rem 3.4rem; background: rgba(15,6,2,.45); }
+  .pied p { margin: 0 auto; max-width: 56ch; font-style: italic; }
+  .pied strong { display: block; font: 400 1.6rem var(--titre); margin-bottom: .3rem; font-style: normal; }
+
+  /* ---------- Petits écrans ---------- */
+  @media (max-width: 640px) {
+    .meuble { grid-template-columns: 1fr; }
+    .pilastre { display: none; }
+    .niche { border-width: 10px; border-radius: 50% 50% 0 0 / 90px 90px 0 0; padding: 0 .5rem; }
+    .planche { margin: 0 -10px; }
+    .rayon { gap: 4px; min-height: 290px; }
+    .livre { --hh: .8; height: calc(var(--h) * .8); }
+    .lecture { grid-template-columns: 1fr; text-align: center; padding: 2.2rem 1.4rem 1.8rem; }
+    .lecture p { margin: 0 auto; }
+    .etiquette { right: 6%; width: 118px; }
+    .carte { font-size: .82rem; white-space: nowrap; }
+    .lecture.vide { padding-right: 3.6rem; padding-left: 1.4rem; }
+    .signet { right: 18px; }
+    .plaque { padding: 2.2rem 1rem 2rem; }
+    .son { font-size: .85rem; padding: .4rem .9rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition-duration: .01ms !important; animation: none !important; }
+  }
+
+  /* ================= Vue « page tournée » : platine + registre ================= */
+  .vue {
+    position: fixed; inset: 0; z-index: 40;
+    overflow-y: auto; overflow-x: hidden;
+    perspective: 2400px;
+    padding: 4.4rem 1rem 3rem;
+  }
+  .vue[hidden] { display: none; }
+  .vue-fond {
+    position: fixed; inset: 0;
+    background: radial-gradient(ellipse at 50% 30%, rgba(60,28,12,.92), rgba(8,3,1,.96));
+    animation: fondu .5s ease both;
+  }
+  @keyframes fondu { from { opacity: 0; } to { opacity: 1; } }
+
+  .feuille { position: relative; max-width: 1060px; margin: 0 auto; transform-origin: left center; }
+  .feuille::before { /* dos du livre : l'ombre de la reliure */
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 34px; z-index: 4; pointer-events: none;
+    border-radius: 12px 0 0 12px;
+    background: linear-gradient(90deg, rgba(0,0,0,.7), rgba(0,0,0,.18) 60%, transparent);
+  }
+  .feuille.ouvre { animation: ouvre .95s cubic-bezier(.2,.8,.2,1) both; }
+  .feuille.ferme { animation: ferme .6s ease-in both; }
+  .feuille.sort  { transform-origin: left center;  animation: sort .42s ease-in both; }
+  .feuille.entre { transform-origin: right center; animation: entre .52s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes ouvre { from { transform: rotateY(-102deg); opacity: 0; filter: brightness(.45); } 35% { opacity: 1; } to { transform: none; filter: none; } }
+  @keyframes ferme { to { transform: rotateY(-102deg); opacity: 0; filter: brightness(.45); } }
+  @keyframes sort  { to { transform: rotateY(-92deg); filter: brightness(.4); } }
+  @keyframes entre { from { transform: rotateY(92deg); filter: brightness(.4); } to { transform: none; filter: none; } }
+
+  .feuille-int {
+    position: relative;
+    display: grid; grid-template-columns: minmax(280px, 400px) 1fr; gap: 1.8rem 2.6rem;
+    padding: 2.8rem 2.4rem 2.2rem 3rem;
+    border-radius: 12px;
+    background-color: #5a2e14;
+    background-image: linear-gradient(135deg, rgba(255,210,150,.16), rgba(0,0,0,.3)), var(--grain);
+    background-blend-mode: normal, multiply;
+    box-shadow: 0 30px 70px rgba(0,0,0,.8), inset 0 0 0 3px rgba(0,0,0,.4), inset 0 3px 0 rgba(255,220,170,.25);
+  }
+  .fermer, .tourne-btn {
+    font: 400 1rem var(--etiquette); color: #2a140a; background: var(--papier);
+    border: 0; border-radius: 4px 14px 4px 14px; padding: .5rem 1.1rem; cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,.6), inset 0 0 0 2px #b9a26a;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .fermer:hover, .tourne-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0,0,0,.65), 0 0 22px rgba(255,210,122,.5), inset 0 0 0 2px #b9a26a; }
+  .tourne-btn:disabled { opacity: .45; cursor: default; }
+  .fermer { position: absolute; top: 1.5rem; right: 1.6rem; z-index: 6; }
+
+  /* --- Platine --- */
+  .platine { display: flex; flex-direction: column; gap: 1.2rem; position: relative; z-index: 2; }
+  .plateau {
+    position: relative; display: grid; place-items: center;
+    padding: 1.1rem; aspect-ratio: 1.04;
+    border-radius: 10px;
+    background-color: #3a1f0f; background-image: var(--veine);
+    box-shadow: inset 0 0 0 3px #1a0c05, inset 0 3px 0 rgba(255,210,150,.25), 0 16px 30px rgba(0,0,0,.65);
+  }
+  .disque-wrap { position: relative; width: 88%; aspect-ratio: 1; border-radius: 50%; box-shadow: 0 14px 30px rgba(0,0,0,.75); }
+  .disque-wrap::after { /* reflet fixe qui ne tourne pas */
+    content: ""; position: absolute; inset: 0; border-radius: 50%; pointer-events: none; z-index: 3;
+    background: conic-gradient(from 30deg, rgba(255,255,255,0) 0 6%, rgba(255,255,255,.2) 10%, rgba(255,255,255,0) 16% 53%, rgba(255,255,255,.15) 58%, rgba(255,255,255,0) 64%);
+  }
+  .disque {
+    position: absolute; inset: 0; border-radius: 50%;
+    background:
+      radial-gradient(circle at center, transparent 0 34%, rgba(0,0,0,.0) 34%),
+      repeating-radial-gradient(circle at center, #0a0a0a 0 2px, #1b1b1b 2px 3px, #0e0e0e 3px 5px);
+    box-shadow: inset 0 0 0 5px #050505, inset 0 0 22px rgba(0,0,0,.8);
+    animation: tourne 2.1s linear infinite; animation-play-state: paused;
+  }
+  .disque.joue { animation-play-state: running; }
+  @keyframes tourne { to { transform: rotate(360deg); } }
+  .etiq {
+    position: absolute; inset: 33%; border-radius: 50%;
+    background-color: #a8321f;
+    background-image: var(--pochette, none), radial-gradient(circle at 35% 30%, #d4553a, #7a1f12);
+    background-size: cover, cover; background-position: center;
+    box-shadow: inset 0 0 0 3px rgba(0,0,0,.4), 0 0 0 3px #050505;
+    display: grid; place-items: center;
+    font: 400 1.1rem/1 var(--titre); color: rgba(255,240,200,.9); text-shadow: 0 2px 0 rgba(0,0,0,.6);
+  }
+  .etiq b { font-weight: 400; }
+  .etiq.avec-pochette b { display: none; }
+  .trou { position: absolute; left: 50%; top: 50%; width: 5.5%; aspect-ratio: 1; margin: -2.75% 0 0 -2.75%; border-radius: 50%; background: #1e0e06; box-shadow: inset 0 2px 3px #000, 0 0 0 2px #9a7a3a; z-index: 2; }
+
+  .pivot { position: absolute; top: 4%; right: 5%; width: 13%; aspect-ratio: 1; border-radius: 50%; z-index: 5;
+    background: radial-gradient(circle at 34% 30%, #fbe7a1 0 14%, #c39a45 42%, #6b4812 100%); box-shadow: 0 4px 8px rgba(0,0,0,.7); }
+  .bras { position: absolute; top: calc(4% + 6.5% / 1); right: calc(5% + 5.9%); width: 12px; height: 62%; z-index: 4;
+    transform-origin: 50% 0; transform: rotate(-26deg); transition: transform 1.3s cubic-bezier(.4,0,.2,1); }
+  .bras::before { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: 0; border-radius: 6px;
+    background: linear-gradient(90deg, #7d7d7d, #f0f0f0 45%, #6a6a6a); box-shadow: 3px 5px 7px rgba(0,0,0,.6); }
+  .bras::after { content: ""; position: absolute; left: -7px; bottom: -14px; width: 26px; height: 38px; border-radius: 4px; transform: rotate(10deg);
+    background: linear-gradient(90deg, #3a1f0f, #6a3d1d 50%, #2a140a); box-shadow: 0 4px 6px rgba(0,0,0,.6); }
+  .bras.joue { transform: rotate(13deg); }
+
+  .lecteur {
+    padding: 1rem 1.1rem; border-radius: 8px;
+    background: rgba(15,6,2,.55); box-shadow: inset 0 0 0 2px rgba(0,0,0,.45), inset 0 2px 0 rgba(255,220,170,.12);
+    font-family: var(--etiquette);
+  }
+  .en-lecture { margin: 0; font-size: 1.05rem; line-height: 1.35; color: #f6e7bd; min-height: 2.8em; }
+  .en-lecture small { display: block; color: #cdb98a; font-size: .85rem; }
+  .barre { height: 7px; margin: .7rem 0 .35rem; border-radius: 4px; background: rgba(0,0,0,.55); overflow: hidden; box-shadow: inset 0 1px 2px #000; }
+  .barre i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #8a6424, var(--lampe)); box-shadow: 0 0 10px rgba(255,210,122,.7); }
+  .temps { display: flex; justify-content: space-between; font-size: .85rem; color: #cdb98a; }
+  .commandes { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .7rem; }
+  .commandes .tourne-btn { padding: .4rem .9rem; font-size: .95rem; }
+  .liens { margin: .8rem 0 0; font-size: .85rem; line-height: 1.6; }
+  .liens a { color: var(--lampe); }
+
+  /* --- Texte + registre --- */
+  .page-texte { position: relative; z-index: 2; min-width: 0; }
+  .v-annee { margin: 0; font: 400 clamp(3.4rem, 9vw, 5.6rem)/1 var(--titre); position: relative; }
+  .page-texte h3 { margin: .3rem 0 .6rem; font: 400 1.7rem/1.2 var(--titre); color: var(--papier); text-shadow: 0 2px 0 rgba(0,0,0,.6); }
+  .page-texte .resume { margin: 0 0 1.4rem; max-width: 58ch; }
+  .page-texte h4 { margin: 0 0 .7rem; font: 400 1.05rem var(--etiquette); color: #f1dfb2; border-bottom: 2px dashed rgba(236,220,174,.45); padding-bottom: .4rem; }
+
+  .registre { list-style: none; margin: 0 0 1.1rem; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .7rem; }
+  .album {
+    display: grid; grid-template-columns: 58px 1fr; gap: .8rem; align-items: center; width: 100%;
+    text-align: left; cursor: pointer; padding: .55rem .7rem .55rem .55rem;
+    border: 0; border-radius: 6px; color: var(--papier);
+    background: rgba(18,7,2,.5); box-shadow: inset 0 0 0 2px rgba(0,0,0,.4);
+    transition: background .25s ease, box-shadow .25s ease, transform .25s ease;
+  }
+  .album:hover { background: rgba(40,18,8,.7); transform: translateY(-2px); }
+  .album.actif { background: rgba(70,34,14,.85); box-shadow: inset 0 0 0 2px var(--laiton), 0 0 20px rgba(255,210,122,.3); }
+  .pochette { width: 58px; aspect-ratio: 1; border-radius: 3px; background-color: #3a1f0f; background-size: cover; background-position: center; box-shadow: 0 3px 6px rgba(0,0,0,.6); position: relative; }
+  .pochette.vide::after { content: ""; position: absolute; inset: 14px; border-radius: 50%; background: repeating-radial-gradient(circle, #0a0a0a 0 2px, #222 2px 3px); }
+  .album .art { display: block; font: 400 .8rem/1.2 var(--etiquette); color: #cdb98a; }
+  .album .tit { display: block; font: 700 .98rem/1.25 var(--texte); margin-top: .1rem; }
+  .album .note { display: block; font: italic .8rem/1.3 var(--texte); color: #cdb98a; margin-top: .15rem; }
+
+  .pistes { list-style: none; margin: 0; padding: 0; max-height: 244px; overflow-y: auto; border-radius: 6px; background: rgba(15,6,2,.4); box-shadow: inset 0 0 0 2px rgba(0,0,0,.4); }
+  .piste { display: grid; grid-template-columns: 2rem 1fr auto; gap: .6rem; align-items: center; width: 100%; text-align: left; cursor: pointer;
+    padding: .5rem .8rem; border: 0; border-bottom: 1px dashed rgba(236,220,174,.18); background: transparent; color: var(--papier); font: 400 .98rem/1.3 var(--texte); }
+  .piste:hover { background: rgba(255,210,122,.1); }
+  .piste.actif { background: rgba(255,210,122,.2); color: #fff3c4; }
+  .piste .n, .piste .d { font: 400 .85rem var(--etiquette); color: #cdb98a; }
+  .statut { margin: .8rem 0 0; font: 400 .92rem/1.5 var(--etiquette); color: #f1dfb2; min-height: 1.5em; }
+  .statut .tourne-btn { margin-left: .5rem; padding: .25rem .8rem; font-size: .9rem; }
+  .credit { margin: .9rem 0 0; font: italic .82rem/1.5 var(--texte); color: #b9a47a; }
+
+  .tournepage { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 1rem; padding-top: 1.2rem; border-top: 2px dashed rgba(236,220,174,.3); position: relative; z-index: 2; }
+
+  @media (max-width: 760px) {
+    .vue { padding: 3.6rem .5rem 2rem; }
+    .feuille-int { grid-template-columns: 1fr; padding: 3.6rem 1.1rem 1.6rem 1.6rem; }
+    .fermer { top: 1rem; right: 1rem; }
+    .plateau { aspect-ratio: 1.02; }
+    .tournepage { flex-direction: column; }
+    .tourne-btn { width: 100%; }
+    .commandes .tourne-btn { width: auto; }
+  }
+</style>
+</head>
+<body>
+
+<button class="son" id="son" type="button" aria-pressed="false">Son : coupé</button>
+
+<header class="mur projecteur">
+  <div class="moulure" aria-hidden="true"></div>
+  <div class="scene">
+    <div class="plaque cuir couture">
+      <i class="rivet a" aria-hidden="true"></i><i class="rivet b" aria-hidden="true"></i>
+      <i class="rivet c" aria-hidden="true"></i><i class="rivet d" aria-hidden="true"></i>
+      <h1 class="or">rétro-vi</h1>
+      <p class="devise">Cuir, laiton et vinyle</p>
+    </div>
+    <div class="etiquette" aria-hidden="true">
+      <span class="ficelle"></span>
+      <div class="carte"><b>6</b>années<br>1954 – 1985</div>
+    </div>
+  </div>
+  <a class="entrer" href="#bibliotheque">Entrer dans la bibliothèque</a>
+</header>
+
+<main>
+  <section class="biblio projecteur" id="bibliotheque" aria-labelledby="t-biblio">
+    <div class="entete">
+      <h2 id="t-biblio" class="or">La bibliothèque</h2>
+      <p>Six livres reliés plein cuir, un par année du rock. Passe le curseur sur un dos pour le sortir de l'étagère. Touche un livre : la page se tourne, un disque se pose sur la platine et le registre des albums de l'année s'ouvre.</p>
+      <p class="note">Le son s'active quand tu touches un livre (bouton en haut à droite pour le couper). Les extraits durent 30 secondes ; au survol, un court riff synthétisé donne un avant-goût.</p>
+    </div>
+
+    <div class="meuble">
+      <div class="pilastre" aria-hidden="true"></div>
+      <div class="niche" id="niche">
+        <div class="cadran or" id="cadran" aria-hidden="true">1954 – 1985</div>
+        <div class="rayon" role="group" aria-label="Les années du rock">
+          <button class="livre" type="button" data-annee="1954" style="--c:#94572a" aria-label="1954, le blouson"><span class="an or">1954</span></button>
+          <button class="livre" type="button" data-annee="1964" style="--c:#5e1f1a" aria-label="1964, le fauteuil club"><span class="an or">1964</span></button>
+          <button class="livre" type="button" data-annee="1969" style="--c:#b0743f" aria-label="1969, la sacoche à franges"><span class="an or">1969</span></button>
+          <button class="livre" type="button" data-annee="1973" style="--c:#34190c" aria-label="1973, la banquette"><span class="an or">1973</span></button>
+          <button class="livre" type="button" data-annee="1977" style="--c:#1f1612" aria-label="1977, le perfecto"><span class="an or">1977</span></button>
+          <button class="livre" type="button" data-annee="1985" style="--c:#24392b" aria-label="1985, la valise de tournée"><span class="an or">1985</span></button>
+        </div>
+        <div class="planche" aria-hidden="true"></div>
+      </div>
+      <div class="pilastre" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="lecture-zone projecteur" aria-label="Aperçu de l'année">
+    <article class="lecture vide" id="lecture" aria-live="polite">
+      <span class="signet" aria-hidden="true"></span>
+      <p>Aucun livre n'est sorti. Passe sur une année pour la lire, touche-la pour ouvrir son disque.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="sol">
+  <div class="plinthe" aria-hidden="true"></div>
+  <div class="pied">
+    <p><strong class="or">rétro-vi</strong>Cuir tanné, laiton patiné, bois ciré. Remets les livres à leur place en sortant.</p>
+  </div>
+</footer>
+
+<div class="vue" id="vue" role="dialog" aria-modal="true" aria-labelledby="v-titre" hidden>
+  <div class="vue-fond" aria-hidden="true"></div>
+  <div class="feuille" id="feuille">
+    <div class="feuille-int couture">
+      <button class="fermer" id="fermer" type="button">Fermer</button>
+
+      <div class="platine">
+        <div class="plateau">
+          <div class="disque-wrap">
+            <div class="disque" id="disque" aria-hidden="true">
+              <div class="etiq" id="etiq"><b id="etiq-an">1954</b></div>
+            </div>
+            <i class="trou" aria-hidden="true"></i>
+          </div>
+          <i class="pivot" aria-hidden="true"></i>
+          <div class="bras" id="bras" aria-hidden="true"></div>
+        </div>
+
+        <div class="lecteur">
+          <p class="en-lecture" id="en-lecture" aria-live="polite">Aucun extrait en cours</p>
+          <div class="barre" aria-hidden="true"><i id="barre-i"></i></div>
+          <div class="temps" aria-hidden="true"><span id="t-cour">0:00</span><span id="t-tot">0:30</span></div>
+          <div class="commandes">
+            <button class="tourne-btn" id="b-prec" type="button">Précédent</button>
+            <button class="tourne-btn" id="b-lect" type="button">Lecture</button>
+            <button class="tourne-btn" id="b-suiv" type="button">Suivant</button>
+          </div>
+          <p class="liens"><a id="l-album" href="#" target="_blank" rel="noopener" hidden>Album complet sur Apple Music</a><br><a id="l-yt" href="#" target="_blank" rel="noopener" hidden>Chercher le titre sur YouTube</a></p>
+        </div>
+      </div>
+
+      <div class="page-texte">
+        <p class="v-annee or" id="v-annee" aria-hidden="true">1954</p>
+        <h3 id="v-titre">Le blouson</h3>
+        <p class="resume" id="v-texte"></p>
+        <h4>Registre des albums</h4>
+        <ul class="registre" id="registre"></ul>
+        <h4 id="h-pistes">Pistes à écouter</h4>
+        <ol class="pistes" id="pistes" aria-labelledby="h-pistes"></ol>
+        <p class="statut" id="statut" aria-live="polite"></p>
+        <p class="credit">Extraits de 30 secondes fournis par Apple (iTunes). Pour écouter les morceaux en entier, ouvre l'album depuis le lien sous le lecteur.</p>
+      </div>
+
+      <nav class="tournepage" aria-label="Changer de page">
+        <button class="tourne-btn" id="p-prec" type="button">Page précédente</button>
+        <button class="tourne-btn" id="p-suiv" type="button">Page suivante</button>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  function $(id) { return document.getElementById(id); }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function norm(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
+  function fmt(s) { s = Math.max(0, Math.round(s || 0)); return Math.floor(s / 60) + ':' + (s % 60 < 10 ? '0' : '') + (s % 60); }
+  var reduit = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---- Lampe qui suit le curseur sur chaque section ----
+  document.querySelectorAll('.projecteur').forEach(function (sec) {
+    sec.addEventListener('pointermove', function (e) {
+      var r = sec.getBoundingClientRect();
+      sec.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      sec.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+
+  // ---- Contenu de chaque année ----
+  var ANNEES = [1954, 1964, 1969, 1973, 1977, 1985];
+  var PAGES = {
+    1954: { nom: 'Le blouson',
+            texte: 'Brando a enfilé son perfecto noir dans L’Équipée sauvage, sorti en 1953. En 1954, Elvis enregistre ses premiers titres chez Sun Records et Fender lance la Stratocaster.',
+            ecoute: 'À l’écoute : That’s All Right, Elvis Presley' },
+    1964: { nom: 'Le fauteuil club',
+            texte: 'Le 9 février, les Beatles jouent à l’Ed Sullivan Show. Des dizaines de millions de foyers américains regardent le même écran, souvent depuis le même fauteuil.',
+            ecoute: 'À l’écoute : I Want to Hold Your Hand, The Beatles' },
+    1969: { nom: 'La sacoche à franges',
+            texte: 'Woodstock, en août : quatre jours de boue, de franges et d’amplis dans un champ de l’État de New York. Jimi Hendrix referme le festival le lundi matin.',
+            ecoute: 'À l’écoute : The Star-Spangled Banner, Jimi Hendrix' },
+    1973: { nom: 'La banquette',
+            texte: 'The Dark Side of the Moon sort en mars. Lambris, lampe orange, banquette de cuir et vinyle sur la platine : l’album va rester des années dans les classements.',
+            ecoute: 'À l’écoute : Money, Pink Floyd' },
+    1977: { nom: 'Le perfecto',
+            texte: 'Le punk a mis le cuir noir sur le dos de toute une scène. En octobre, les Sex Pistols sortent leur seul album studio, Never Mind the Bollocks.',
+            ecoute: 'À l’écoute : Pretty Vacant, Sex Pistols' },
+    1985: { nom: 'La valise de tournée',
+            texte: 'Le 13 juillet, Live Aid relie Wembley à Philadelphie pour une seule journée de concerts, suivie en direct dans le monde entier.',
+            ecoute: 'À l’écoute : Queen sur la scène de Wembley' }
+  };
+
+  // Registre : a = artiste, t = album, m = mot-clé pour reconnaître l'artiste, h = titre à lancer en premier
+  var ALBUMS = {
+    1954: [
+      { a: 'Elvis Presley', t: 'The Sun Sessions', m: 'elvis', h: 'That’s All Right', note: 'Enregistrements de 1954-1955, réunis plus tard' },
+      { a: 'Bill Haley & His Comets', t: 'Rock Around the Clock', m: 'haley', h: 'Rock Around the Clock', note: 'Titre enregistré en avril 1954' },
+      { a: 'Muddy Waters', t: 'The Best of Muddy Waters', m: 'muddy', h: 'Hoochie Coochie Man', note: 'Compilation Chess, dont des titres de 1954' }
+    ],
+    1964: [
+      { a: 'The Beatles', t: 'A Hard Day’s Night', m: 'beatles', h: 'A Hard Day’s Night', note: 'Juillet 1964' },
+      { a: 'The Rolling Stones', t: 'The Rolling Stones', m: 'rolling', h: 'Route 66', note: 'Premier album, avril 1964' },
+      { a: 'The Kinks', t: 'Kinks', m: 'kinks', h: 'You Really Got Me', note: 'Premier album, octobre 1964' },
+      { a: 'Bob Dylan', t: 'The Times They Are a-Changin’', m: 'dylan', h: 'The Times They Are a-Changin', note: 'Janvier 1964' }
+    ],
+    1969: [
+      { a: 'Led Zeppelin', t: 'Led Zeppelin', m: 'zeppelin', h: 'Good Times Bad Times', note: 'Premier album, janvier 1969' },
+      { a: 'The Beatles', t: 'Abbey Road', m: 'beatles', h: 'Come Together', note: 'Septembre 1969' },
+      { a: 'The Who', t: 'Tommy', m: 'who', h: 'Pinball Wizard', note: 'Opéra rock, mai 1969' },
+      { a: 'King Crimson', t: 'In the Court of the Crimson King', m: 'crimson', h: '21st Century Schizoid Man', note: 'Octobre 1969' }
+    ],
+    1973: [
+      { a: 'Pink Floyd', t: 'The Dark Side of the Moon', m: 'floyd', h: 'Money', note: 'Mars 1973' },
+      { a: 'Led Zeppelin', t: 'Houses of the Holy', m: 'zeppelin', h: 'The Song Remains the Same', note: 'Mars 1973' },
+      { a: 'David Bowie', t: 'Aladdin Sane', m: 'bowie', h: 'The Jean Genie', note: 'Avril 1973' },
+      { a: 'The Who', t: 'Quadrophenia', m: 'who', h: 'The Real Me', note: 'Octobre 1973' }
+    ],
+    1977: [
+      { a: 'Sex Pistols', t: 'Never Mind the Bollocks, Here’s the Sex Pistols', m: 'sexpistols', h: 'Pretty Vacant', note: 'Leur seul album studio, octobre 1977' },
+      { a: 'The Clash', t: 'The Clash', m: 'clash', h: 'White Riot', note: 'Premier album, avril 1977 (Royaume-Uni)' },
+      { a: 'Ramones', t: 'Rocket to Russia', m: 'ramones', h: 'Sheena Is a Punk Rocker', note: 'Novembre 1977' },
+      { a: 'Television', t: 'Marquee Moon', m: 'television', h: 'Marquee Moon', note: 'Février 1977' }
+    ],
+    1985: [
+      { a: 'Dire Straits', t: 'Brothers in Arms', m: 'direstraits', h: 'Money for Nothing', note: 'Mai 1985, le groupe joue à Live Aid' },
+      { a: 'Tears for Fears', t: 'Songs from the Big Chair', m: 'tearsforfears', h: 'Everybody Wants to Rule the World', note: 'Février 1985' },
+      { a: 'The Smiths', t: 'Meat Is Murder', m: 'smiths', h: 'The Headmaster Ritual', note: 'Février 1985' }
+    ]
+  };
+
+  // ---- Réseau : API de recherche iTunes en JSONP (pas de blocage CORS) ----
+  var SEARCH = 'https://itunes.apple.com/search?media=music&country=US&term=';
+  var LOOKUP = 'https://itunes.apple.com/lookup?country=US&entity=song&limit=80&id=';
+  var jid = 0;
+  function jsonp(url) {
+    return new Promise(function (resolve, reject) {
+      var nom = '__it' + (++jid) + '_' + Date.now(), fini = false, s = document.createElement('script');
+      var timer = setTimeout(function () { fin(); reject(new Error('délai dépassé')); }, 10000);
+      function fin() { fini = true; clearTimeout(timer); try { delete window[nom]; } catch (e) { window[nom] = undefined; } if (s.parentNode) s.parentNode.removeChild(s); }
+      window[nom] = function (d) { if (fini) return; fin(); resolve(d); };
+      s.onerror = function () { if (fini) return; fin(); reject(new Error('réseau')); };
+      s.src = url + '&callback=' + nom;
+      document.head.appendChild(s);
+    });
+  }
+
+  var cache = {};
+  function metaAlbum(annee, i) {
+    var k = 'm' + annee + '-' + i;
+    if (!cache[k]) {
+      var it = ALBUMS[annee][i];
+      cache[k] = jsonp(SEARCH + encodeURIComponent(it.a + ' ' + it.t) + '&entity=album&limit=10').then(function (d) {
+        var r = (d.results || []).filter(function (x) { return x.collectionId; });
+        if (!r.length) throw new Error('album introuvable');
+        var mot = norm(it.t).slice(0, 6), meilleur = null, best = -1;
+        r.forEach(function (x) {
+          var sc = (norm(x.artistName).indexOf(norm(it.m)) > -1 ? 2 : 0) + (norm(x.collectionName).indexOf(mot) > -1 ? 1 : 0);
+          if (sc > best) { best = sc; meilleur = x; }
+        });
+        var art = meilleur.artworkUrl100 || '';
+        return { id: meilleur.collectionId, titre: meilleur.collectionName, artiste: meilleur.artistName,
+                 mini: art, grande: art.replace('100x100', '600x600'), lien: meilleur.collectionViewUrl };
+      });
+      cache[k].catch(function () { delete cache[k]; });
+    }
+    return cache[k];
+  }
+  function pistesAlbum(annee, i) {
+    var k = 'p' + annee + '-' + i;
+    if (!cache[k]) {
+      cache[k] = metaAlbum(annee, i).then(function (m) {
+        return jsonp(LOOKUP + m.id).then(function (d) {
+          var p = (d.results || []).filter(function (x) { return x.wrapperType === 'track' && x.previewUrl; });
+          p.sort(function (a, b) { return ((a.discNumber || 1) - (b.discNumber || 1)) || ((a.trackNumber || 0) - (b.trackNumber || 0)); });
+          if (!p.length) throw new Error('aucun extrait');
+          return p.map(function (x) { return { titre: x.trackName, artiste: x.artistName, url: x.previewUrl, ms: x.trackTimeMillis, lien: x.trackViewUrl }; });
+        });
+      });
+      cache[k].catch(function () { delete cache[k]; });
+    }
+    return cache[k];
+  }
+
+  // ---- Synthèse de secours : un riff différent par année ----
+  var RIFFS = {
+    1954: { wave: 'triangle', step: 0.15, dur: 0.22, vol: 0.55, lp: 900,
+            notes: [40, 44, 47, 49, 47, 44, 40, 40] },
+    1964: { wave: 'sawtooth', step: 0.11, dur: 0.34, vol: 0.2, lp: 3200,
+            notes: [[64, 71], [67, 74], [71, 78], [76, 83], [71, 78], [67, 74]] },
+    1969: { wave: 'sawtooth', step: 0.24, dur: 0.3, vol: 0.28, lp: 1800, glide: true,
+            notes: [57, 59, 62, 64, 62, 57] },
+    1973: { wave: 'sine', step: 0.26, dur: 1.2, vol: 0.3, echo: true,
+            notes: [[50, 57], [62], [66], [69], [74]] },
+    1977: { wave: 'sawtooth', step: 0.1, dur: 0.12, vol: 0.26, lp: 2600,
+            notes: [[40, 47, 52], [40, 47, 52], [43, 50, 55], [40, 47, 52], [45, 52, 57], [40, 47, 52]] },
+    1985: { wave: 'square', step: 0.09, dur: 0.15, vol: 0.15, lp: 3800, detune: 8, echo: true,
+            notes: [60, 64, 67, 72, 67, 64, 60, 55, 60, 64, 67, 72] }
+  };
+
+  var ctx = null, master = null, bus = null, soundOn = false;
+  var lastYear = null, lastTime = 0;
+  var btn = $('son');
+
+  function freq(m) { return 440 * Math.pow(2, (m - 69) / 12); }
+  function ensureCtx() {
+    if (ctx) return;
+    var AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    ctx = new AC();
+    master = ctx.createGain();
+    master.gain.value = 0.5;
+    master.connect(ctx.destination);
+  }
+  function note(dest, riff, m, t, len) {
+    var o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = riff.wave;
+    o.frequency.value = freq(m);
+    if (riff.detune) o.detune.value = riff.detune;
+    var out = g;
+    if (riff.lp) {
+      var f = ctx.createBiquadFilter();
+      f.type = 'lowpass'; f.frequency.value = riff.lp;
+      g.connect(f); out = f;
+    }
+    out.connect(dest);
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.linearRampToValueAtTime(riff.vol, t + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + len);
+    o.connect(g);
+    o.start(t);
+    o.stop(t + len + 0.05);
+  }
+  function glideLine(dest, riff, t) {
+    var o = ctx.createOscillator(), g = ctx.createGain(), f = ctx.createBiquadFilter();
+    o.type = riff.wave;
+    f.type = 'lowpass'; f.frequency.value = riff.lp;
+    o.connect(g); g.connect(f); f.connect(dest);
+    var total = riff.notes.length * riff.step + 0.4;
+    o.frequency.setValueAtTime(freq(riff.notes[0]), t);
+    riff.notes.forEach(function (m, i) { o.frequency.linearRampToValueAtTime(freq(m), t + (i + 1) * riff.step); });
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.linearRampToValueAtTime(riff.vol, t + 0.03);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + total);
+    o.start(t);
+    o.stop(t + total + 0.05);
+  }
+  function coupeRiff() {
+    if (bus && ctx) { bus.gain.cancelScheduledValues(ctx.currentTime); bus.gain.setTargetAtTime(0, ctx.currentTime, 0.03); }
+  }
+  function riff(year) {
+    if (!soundOn || !RIFFS[year]) return;
+    ensureCtx();
+    if (!ctx) return;
+    if (ctx.state === 'suspended') ctx.resume();
+    var now = ctx.currentTime;
+    if (year === lastYear && now - lastTime < 0.7) return;
+    lastYear = year; lastTime = now;
+    if (bus) { var old = bus; coupeRiff(); setTimeout(function () { try { old.disconnect(); } catch (e) {} }, 600); }
+    bus = ctx.createGain();
+    bus.gain.value = 1;
+    var r = RIFFS[year], dest = bus;
+    if (r.echo) {
+      var d = ctx.createDelay(1), fb = ctx.createGain();
+      d.delayTime.value = 0.28; fb.gain.value = 0.38;
+      d.connect(fb); fb.connect(d);
+      bus.connect(d); d.connect(master);
+    }
+    bus.connect(master);
+    var t = now + 0.02;
+    if (r.glide) { glideLine(dest, r, t); return; }
+    r.notes.forEach(function (n, i) {
+      (Array.isArray(n) ? n : [n]).forEach(function (m) { note(dest, r, m, t + i * r.step, r.dur); });
+    });
+  }
+
+  // ---- Lecteur d'extraits ----
+  var audio = new Audio();
+  audio.preload = 'none';
+  var SILENCE = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
+  function debloquer() { try { audio.src = SILENCE; var p = audio.play(); if (p && p.catch) p.catch(function () {}); } catch (e) {} }
+  function reelle() { return audio.src && audio.src.indexOf('data:') !== 0; }
+
+  function majBouton() {
+    btn.setAttribute('aria-pressed', String(soundOn));
+    btn.textContent = soundOn ? 'Son : activé' : 'Son : coupé';
+  }
+  btn.addEventListener('click', function () {
+    soundOn = !soundOn;
+    majBouton();
+    audio.muted = !soundOn;
+    if (soundOn) { ensureCtx(); if (ctx && ctx.state === 'suspended') ctx.resume(); }
+    else { coupeRiff(); }
+  });
+
+  var vue = $('vue'), feuille = $('feuille'), disque = $('disque'), bras = $('bras'), etiq = $('etiq');
+  var registre = $('registre'), pistesEl = $('pistes'), statut = $('statut');
+  var etat = { annee: null, album: -1, piste: -1, liste: [], jeton: 0, ouvert: false, occupe: false, declencheur: null };
+
+  function dire(msg, reessayer) {
+    statut.textContent = msg || '';
+    if (reessayer) {
+      var b = el('button', 'tourne-btn', 'Réessayer');
+      b.type = 'button';
+      b.addEventListener('click', reessayer);
+      statut.appendChild(b);
+    }
+  }
+
+  function majLecteur() {
+    var joue = reelle() && !audio.paused && !audio.ended;
+    disque.classList.toggle('joue', joue);
+    bras.classList.toggle('joue', joue);
+    $('b-lect').textContent = joue ? 'Pause' : 'Lecture';
+  }
+  audio.addEventListener('playing', majLecteur);
+  audio.addEventListener('play', majLecteur);
+  audio.addEventListener('pause', majLecteur);
+  audio.addEventListener('timeupdate', function () {
+    if (!reelle()) return;
+    var d = audio.duration && isFinite(audio.duration) ? audio.duration : 30;
+    $('barre-i').style.width = Math.min(100, audio.currentTime / d * 100) + '%';
+    $('t-cour').textContent = fmt(audio.currentTime);
+    $('t-tot').textContent = fmt(d);
+  });
+  audio.addEventListener('ended', function () {
+    if (!reelle()) return;
+    majLecteur();
+    if (etat.piste + 1 < etat.liste.length) jouerPiste(etat.piste + 1);
+  });
+  audio.addEventListener('error', function () {
+    if (reelle()) dire('Cet extrait n’a pas pu être lu. Essaie une autre piste.');
+  });
+
+  function jouerPiste(j, sansLecture) {
+    var p = etat.liste[j];
+    if (!p) return;
+    etat.piste = j;
+    audio.src = p.url;
+    audio.muted = !soundOn;
+    $('barre-i').style.width = '0';
+    $('t-cour').textContent = '0:00';
+    $('t-tot').textContent = '0:30';
+    var enL = $('en-lecture');
+    enL.textContent = p.titre;
+    var pt = el('small', null, p.artiste + ' · extrait de 30 s');
+    enL.appendChild(pt);
+    var yt = $('l-yt');
+    yt.href = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(p.artiste + ' ' + p.titre);
+    yt.hidden = false;
+    Array.prototype.forEach.call(pistesEl.children, function (li, n) { li.firstChild.classList.toggle('actif', n === j); });
+    if (!sansLecture) {
+      var pr = audio.play();
+      if (pr && pr.catch) pr.catch(function () { dire('Touche « Lecture » pour lancer l’extrait.'); });
+    }
+  }
+
+  function afficherPistes(liste) {
+    pistesEl.textContent = '';
+    liste.forEach(function (p, j) {
+      var li = el('li');
+      var b = el('button', 'piste');
+      b.type = 'button';
+      b.appendChild(el('span', 'n', String(j + 1)));
+      b.appendChild(el('span', 't', p.titre));
+      b.appendChild(el('span', 'd', p.ms ? fmt(p.ms / 1000) : ''));
+      b.addEventListener('click', function () { jouerPiste(j); });
+      li.appendChild(b);
+      pistesEl.appendChild(li);
+    });
+  }
+
+  function choisirAlbum(i, auto) {
+    var annee = etat.annee, jeton = etat.jeton;
+    etat.album = i;
+    Array.prototype.forEach.call(registre.children, function (li, n) { li.firstChild.classList.toggle('actif', n === i); });
+    var it = ALBUMS[annee][i];
+    $('h-pistes').textContent = 'Pistes à écouter : ' + it.t;
+    pistesEl.textContent = '';
+    etat.liste = [];
+    dire('Chargement des pistes…');
+    pistesAlbum(annee, i).then(function (liste) {
+      if (jeton !== etat.jeton || etat.album !== i) return;
+      etat.liste = liste;
+      afficherPistes(liste);
+      dire('');
+      metaAlbum(annee, i).then(function (m) {
+        if (jeton !== etat.jeton) return;
+        var la = $('l-album');
+        la.href = m.lien || '#'; la.hidden = !m.lien;
+        if (m.grande) { etiq.style.setProperty('--pochette', 'url("' + m.grande + '")'); etiq.classList.add('avec-pochette'); }
+      });
+      var h = norm(it.h), j = 0;
+      for (var n = 0; n < liste.length; n++) { if (norm(liste[n].titre).indexOf(h) > -1) { j = n; break; } }
+      jouerPiste(j, !auto);
+    }).catch(function () {
+      if (jeton !== etat.jeton) return;
+      dire('Les extraits n’ont pas pu être chargés (connexion ou catalogue).', function () { choisirAlbum(i, auto); });
+      riff(annee);
+      disque.classList.add('joue'); bras.classList.add('joue');
+      setTimeout(function () { if (!reelle() || audio.paused) { disque.classList.remove('joue'); bras.classList.remove('joue'); } }, 3500);
+    });
+  }
+
+  function remplir(annee) {
+    etat.annee = annee; etat.jeton++; etat.album = -1; etat.piste = -1; etat.liste = [];
+    var jeton = etat.jeton, p = PAGES[annee], albums = ALBUMS[annee];
+    audio.pause();
+    if (reelle()) audio.removeAttribute('src');
+    majLecteur();
+    $('v-annee').textContent = annee;
+    $('v-titre').textContent = p.nom;
+    $('v-texte').textContent = p.texte;
+    $('etiq-an').textContent = annee;
+    etiq.style.removeProperty('--pochette'); etiq.classList.remove('avec-pochette');
+    $('en-lecture').textContent = 'Aucun extrait en cours';
+    $('barre-i').style.width = '0'; $('t-cour').textContent = '0:00'; $('t-tot').textContent = '0:30';
+    $('l-album').hidden = true; $('l-yt').hidden = true;
+    pistesEl.textContent = '';
+    $('h-pistes').textContent = 'Pistes à écouter';
+    dire('');
+    registre.textContent = '';
+    albums.forEach(function (it, i) {
+      var li = el('li'), b = el('button', 'album');
+      b.type = 'button';
+      var poch = el('span', 'pochette vide');
+      var txt = el('span');
+      txt.appendChild(el('span', 'art', it.a));
+      txt.appendChild(el('span', 'tit', it.t));
+      txt.appendChild(el('span', 'note', it.note));
+      b.appendChild(poch); b.appendChild(txt);
+      b.addEventListener('click', function () { debloquer(); choisirAlbum(i, true); });
+      li.appendChild(b);
+      registre.appendChild(li);
+      metaAlbum(annee, i).then(function (m) {
+        if (jeton !== etat.jeton || !m.mini) return;
+        poch.classList.remove('vide');
+        poch.style.backgroundImage = 'url("' + m.mini + '")';
+      }).catch(function () {});
+    });
+    var idx = ANNEES.indexOf(annee);
+    var prec = $('p-prec'), suiv = $('p-suiv');
+    prec.disabled = idx <= 0; suiv.disabled = idx >= ANNEES.length - 1;
+    prec.textContent = idx > 0 ? 'Page précédente : ' + ANNEES[idx - 1] : 'Première page';
+    suiv.textContent = idx < ANNEES.length - 1 ? 'Page suivante : ' + ANNEES[idx + 1] : 'Dernière page';
+  }
+
+  var HORS = ['header.mur', 'main', 'footer.sol'];
+  function inerte(oui) { HORS.forEach(function (s) { var n = document.querySelector(s); if (n) { if (oui) n.setAttribute('inert', ''); else n.removeAttribute('inert'); } }); }
+
+  function ouvrir(annee, declencheur) {
+    if (etat.ouvert || etat.occupe) return;
+    debloquer();
+    coupeRiff();
+    if (!soundOn) { soundOn = true; majBouton(); ensureCtx(); }
+    audio.muted = false;
+    etat.declencheur = declencheur || null;
+    remplir(annee);
+    vue.hidden = false;
+    vue.scrollTop = 0;
+    feuille.className = 'feuille ouvre';
+    etat.ouvert = true;
+    document.body.style.overflow = 'hidden';
+    inerte(true);
+    $('fermer').focus({ preventScroll: true });
+    choisirAlbum(0, true);
+  }
+
+  function fermer() {
+    if (!etat.ouvert || etat.occupe) return;
+    etat.occupe = true;
+    audio.pause();
+    majLecteur();
+    feuille.className = 'feuille ferme';
+    setTimeout(function () {
+      vue.hidden = true;
+      feuille.className = 'feuille';
+      etat.ouvert = false; etat.occupe = false; etat.jeton++;
+      document.body.style.overflow = '';
+      inerte(false);
+      if (etat.declencheur) etat.declencheur.focus({ preventScroll: true });
+    }, reduit ? 0 : 600);
+  }
+
+  function tourner(annee) {
+    if (!etat.ouvert || etat.occupe || annee === etat.annee || ANNEES.indexOf(annee) < 0) return;
+    etat.occupe = true;
+    debloquer();
+    feuille.className = 'feuille sort';
+    setTimeout(function () {
+      remplir(annee);
+      vue.scrollTop = 0;
+      feuille.className = 'feuille entre';
+      choisirAlbum(0, true);
+      setTimeout(function () { feuille.className = 'feuille'; etat.occupe = false; }, reduit ? 0 : 520);
+    }, reduit ? 0 : 420);
+  }
+
+  $('fermer').addEventListener('click', fermer);
+  $('p-prec').addEventListener('click', function () { tourner(ANNEES[ANNEES.indexOf(etat.annee) - 1]); });
+  $('p-suiv').addEventListener('click', function () { tourner(ANNEES[ANNEES.indexOf(etat.annee) + 1]); });
+  $('b-lect').addEventListener('click', function () {
+    if (!etat.liste.length) return;
+    if (!reelle()) { jouerPiste(Math.max(0, etat.piste)); return; }
+    if (audio.paused) { audio.muted = false; if (!soundOn) { soundOn = true; majBouton(); } var pr = audio.play(); if (pr && pr.catch) pr.catch(function () {}); } else audio.pause();
+  });
+  $('b-prec').addEventListener('click', function () { if (etat.piste > 0) jouerPiste(etat.piste - 1); });
+  $('b-suiv').addEventListener('click', function () { if (etat.piste + 1 < etat.liste.length) jouerPiste(etat.piste + 1); });
+  document.addEventListener('keydown', function (e) {
+    if (!etat.ouvert) return;
+    if (e.key === 'Escape') fermer();
+    else if (e.key === 'ArrowRight') tourner(ANNEES[ANNEES.indexOf(etat.annee) + 1]);
+    else if (e.key === 'ArrowLeft') tourner(ANNEES[ANNEES.indexOf(etat.annee) - 1]);
+  });
+
+  // ---- Panneau de lecture rapide sous l'étagère (survol) ----
+  var lecture = $('lecture'), cadran = $('cadran'), niche = $('niche');
+  var livres = Array.prototype.slice.call(document.querySelectorAll('.livre'));
+  function apercu(annee) {
+    var p = PAGES[annee];
+    livres.forEach(function (l) { l.classList.toggle('actif', Number(l.dataset.annee) === annee); });
+    cadran.textContent = String(annee);
+    niche.style.setProperty('--lueur', '.38');
+    lecture.classList.remove('vide');
+    lecture.textContent = '';
+    lecture.appendChild(el('span', 'signet')).setAttribute('aria-hidden', 'true');
+    var g = el('div', 'grande-annee or', String(annee)); g.setAttribute('aria-hidden', 'true');
+    lecture.appendChild(g);
+    var bloc = el('div');
+    bloc.appendChild(el('h3', null, p.nom));
+    bloc.appendChild(el('p', null, p.texte));
+    bloc.appendChild(el('p', 'ecoute', 'Touche le livre pour tourner la page et poser le disque.'));
+    lecture.appendChild(bloc);
+  }
+  livres.forEach(function (l) {
+    var y = Number(l.getAttribute('data-annee'));
+    ['pointerenter', 'focus'].forEach(function (ev) {
+      l.addEventListener(ev, function () { if (etat.ouvert) return; apercu(y); riff(y); });
+    });
+    l.addEventListener('click', function () { apercu(y); ouvrir(y, l); });
+  });
+})();
+</script>
+</body>
+</html>
